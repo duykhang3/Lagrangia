@@ -1,0 +1,40 @@
+{
+  "name": "lagrangia",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Lagrangia - interactive robotics dynamics & control playground (cart-pole, Furuta pendulum, Franka 7-DOF arm)",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/copy-mathlive-assets.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.114.0",
+    "@react-three/fiber": "^8.17.10",
+    "@xyflow/react": "^12.3.2",
+    "idb-keyval": "^6.2.1",
+    "katex": "^0.16.11",
+    "mathlive": "^0.101.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-markdown": "^9.0.1",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.0",
+    "remark-math": "^6.0.0",
+    "three": "^0.169.0",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.169.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  }
+}
